@@ -1,4 +1,4 @@
-var expect = chai.expect;
+/*var expect = chai.expect;
 
 describe('youtube service', function() {
   // 1. Load the module
@@ -8,9 +8,10 @@ describe('youtube service', function() {
   
   beforeEach(module('templates'));
   beforeEach(inject(function(youTube) {
-    youTubeService = youTube;
+    youTubeService = youTube; 
+    console.log(youTube);
   }));
-
+  
   it('should have a function named search', function() {
     expect(youTubeService.search).to.exist;
     expect(youTubeService.search).to.be.a('function');
@@ -20,4 +21,4 @@ describe('youtube service', function() {
   // should accept query and callback
   // should get data from youtube with correct shape
   
-});
+});*/
