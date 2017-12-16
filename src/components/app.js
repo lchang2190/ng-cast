@@ -9,6 +9,11 @@ angular.module('video-player')
       that.i = index;
       console.log(that.i);
     };
+    this.searchClick = function (text) {
+      //youTube.searchYoutube(text);
+      //console.log(text);
+      this.input = '';
+    };
   },
   templateUrl: '/src/templates/app.html'   
   
