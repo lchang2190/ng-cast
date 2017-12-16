@@ -7,16 +7,17 @@ angular.module('video-player')
       url: 'https://www.googleapis.com/youtube/v3/search',
       params: {
         key: YOUTUBE_API_KEY,
-        q: 'cats',
+        q: query,
         part: 'snippet',
-        maxResults: 8,
+        maxResults: 5,
         type: 'video',
         videoEmbeddable: true
       }    
-    }).then(function successCallback(data) {
-      var results = data.items;
+    }).then(function (data) {
+      var results = data.data.items;
+      cb(results);
       console.log('success!');
-    }, function errorCallback(data) {
+    }, function (data) {
       console.log('failure!');      
     });
   };
